@@ -1137,7 +1137,8 @@
               <input type="hidden" name="_subject" value="New table booking" />
               <input type="hidden" name="_captcha" value="false" />
               <input type="hidden" name="_template" value="table" />
-              <input type="hidden" name="_next" value="https://brahimfatnass.github.io/agent-ia/index.html" />
+              <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off" />
+              <input type="hidden" name="_next" value="https://brahimfatnass.github.io/agent/index.html" />
               <div>
                 <input type="text" name="name" class="form-control" placeholder="Your Name" required />
               </div>
@@ -1160,6 +1161,22 @@
               </div>
               <div>
                 <input type="date" name="date" class="form-control" required>
+              </div>
+              <div>
+                <select name="time" class="form-control nice-select wide" required>
+                  <option value="" disabled selected>Time (10:00 - 20:30)</option>
+                  <option value="10:00">10:00</option><option value="10:30">10:30</option><option value="11:00">11:00</option><option value="11:30">11:30</option><option value="12:00">12:00</option><option value="12:30">12:30</option><option value="13:00">13:00</option><option value="13:30">13:30</option><option value="14:00">14:00</option><option value="14:30">14:30</option><option value="15:00">15:00</option><option value="15:30">15:30</option><option value="16:00">16:00</option><option value="16:30">16:30</option><option value="17:00">17:00</option><option value="17:30">17:30</option><option value="18:00">18:00</option><option value="18:30">18:30</option><option value="19:00">19:00</option><option value="19:30">19:30</option><option value="20:00">20:00</option><option value="20:30">20:30</option>
+                </select>
+              </div>
+              <div>
+                <select name="seating" class="form-control nice-select wide">
+                  <option value="any" selected>No seating preference</option>
+                  <option value="indoor">Indoor</option>
+                  <option value="terrace">Terrace</option>
+                </select>
+              </div>
+              <div>
+                <input type="text" name="notes" class="form-control" placeholder="Special requests (optional)">
               </div>
               <div class="btn_box">
                 <button type="submit">
